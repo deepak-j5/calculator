@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Important Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Title -->
+    <title>Calculator with BootStrap</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Page Icon -->
+    <link rel="shortcut icon" href="css/img/favicon.png" type="image/x-icon">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <br><br>
+    <div class="container"> <!-- Container of all elements -->
+        <div class="border"> <!-- Adds Border in Small screens -->
+            <b><h1>CALCULATOR</h1></b> 
+            <div class="input-box tt" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to Copy Text"></div> <!-- Display Box -->
+            <div class="copytxt"><i class="fa-regular fa-clipboard"></i>  Text copied to clipboard!</div> <!-- Copied Text message (hidden by default) -->
+            <div class="btn-container"> <!-- Button Grid -->
+                <div class="row"> <!-- Row 1 -->
+                    <button class="buttons red" id="clear1"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="buttons green" value="equal">=</button>
+                    <button class="buttons red" value="clearall">AC</button>    
+                </div> <!-- Row 1 ends here -->
+                <div class="row"> <!-- Row 2 -->
+                    <button class="buttons" value="9">9</button>    
+                    <button class="buttons" value="8">8</button>
+                    <button class="buttons" value="7">7</button>
+                </div> <!-- Row 2 ends here -->
+                <div class="row"> <!-- Row 3 -->
+                    <button class="buttons" value="6">6</button>
+                    <button class="buttons" value="5">5</button>
+                    <button class="buttons" value="4">4</button>
+                </div> <!-- Row 3 ends here -->
+                <div class="row"> <!-- Row 4 -->
+                    <button class="buttons" value="3">3</button>
+                    <button class="buttons" value="2">2</button>
+                    <button class="buttons" value="1">1</button>
+                </div> <!-- Row 4 ends here -->
+                <div class="row"> <!-- Row 5 -->
+                    <button class="buttons" value="+"><i class="fa-solid fa-plus"></i></button>
+                    <button class="buttons" value="0">0</button>
+                    <button class="buttons" value="-"><i class="fa-solid fa-minus"></i></button>    
+                </div> <!-- Row 5 ends here -->
+                <div class="row"> <!-- Row 6 -->
+                    <button class="buttons" value="*"><i class="fa-solid fa-xmark"></i></button>
+                    <button class="buttons" value="/"><i class="fa-solid fa-divide"></i></button>
+                    <button class="buttons" value="."><b>.</b></button>
+                </div> <!-- Row 6 ends here -->
+                <div class="last row"> <!-- Row 7 -->
+                    <button class="buttons" value="sqr">Square</button>
+                    <button class="buttons" value="%"><i class="fa-solid fa-percent"></i></button> 
+                    <button class="buttons" value="sqrt"><i class="fa-solid fa-square-root-variable"></i></button>        
+                </div> <!-- Row 7 ends here -->
+            </div> <!-- Closing .btn-container div -->
+        </div> <!--Closing .border div -->
+    </div> <!-- Closing Container div -->
+</body>
+<!-- Calculator Script -->
+<script src="js/script.js"></script>
+<!-- Bootstrap JS for ToolTips -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha512-VK2zcvntEufaimc+efOYi622VN5ZacdnufnmX7zIhCPmjhKnOi9ZDMtg1/ug5l183f19gG1/cBstPO4D8N/Img==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Important Script for ToolTips -->
+<script> 
+    const t1 = document.querySelectorAll('.tt')
+    t1.forEach(t => {
+        new bootstrap.Tooltip(t)
+    })
+</script>
+</html>

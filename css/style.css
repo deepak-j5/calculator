@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none; /* Stops users from selecting any text */
+}
+
+body {
+    background-color: #d9e2e8;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.input-box , .btn-container {
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+.row {
+    width: 100vh;
+    margin: 1rem 0rem;
+}
+
+.last {
+    padding-bottom: 1rem;
+}
+
+.input-box {
+    width: 30rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    font-size: 2.8rem;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 2px 2px red;
+    color: black;
+    position: relative;
+    left: 18vh;
+}
+
+.input-box:hover {
+    border: 2px solid black;
+}
+
+.buttons {
+    margin: 0.3rem 2rem;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    font-weight: bolder;
+    background-color: yellow;
+    transition: 0.2s;
+}
+
+.buttons:hover {
+    background-color: blue;
+    transition: 0.5s;
+}
+
+.red:hover {
+    background-color: red;
+}
+
+.green:hover {
+    background-color: green;
+}
+
+.container {
+    border: 2px solid black;
+    width: fit-content;
+    padding-top: 1rem;
+    margin: auto;
+}
+
+.copytxt {
+    text-align: center;
+    color: red;
+    font-size: 1.35rem;
+    margin: 1.3rem 0rem;
+}
+
+/*For Smaller Screens*/
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: #d9e2e8;
+    }
+    .input-box {
+        width: 22rem;
+        height: 2rem;
+        left: 7vh;
+        font-size: 2rem;
+    }
+    .container {
+        width: 50vw;
+        vertical-align: center;
+        border: none;
+    }
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    .btn-container {
+        width: 100vw;
+        left: 0vh;
+        position: relative;
+        text-align: start;
+    }
+    .buttons {
+        width: 5rem;
+        height: 1.5rem;
+    }
+    .copytxt {
+        text-align: center;
+        color: red;
+        font-size: 0.8rem;
+        margin: 1.3rem 0rem;
+        margin-left: 1.3rem ;
+    }
+    .border {
+        border: 2px solid black;
+        width: fit-content;
+    }
+}
+
+/*For Tablet screen*/
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+    body {
+        background-color: #d9e2e8;
+    }
+    .input-box {
+        width: 23rem;
+        height: 2.5rem;
+        left: 7vh;
+        font-size: 2.4rem;
+    }
+    .container {
+        width: 50vw;
+        vertical-align: center;
+        border: none;
+    }
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .btn-container {
+        width: 100vw;
+        left: 0vh;
+        position: relative;
+        text-align: start;
+    }
+    .buttons {
+        width: 5.5rem;
+        height: 1.75rem;
+    }
+    .copytxt {
+        text-align: center;
+        color: red;
+        font-size: 0.8rem;
+        margin: 1.3rem 0rem;
+        margin-left: 1.3rem ;
+    }
+    .border {
+        border: 2px solid black;
+        width: 30rem;
+    }
+}
+
+/* For Extra Large Screen*/
+@media only screen and (min-width: 1024px) {
+    .input-box {
+        left: 19vh;
+    }
+}
